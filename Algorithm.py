@@ -256,6 +256,13 @@ def 2dTo1d(row,col):
     index= col+row*3
     return index
 
+#takes in a number and tells the position in matrix
+
+def modify(x):
+    row=math.floor(x/3)
+    col=x%3
+    return row,col
+
 def main():
     """
     Main function that calls all functions
