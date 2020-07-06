@@ -5,7 +5,7 @@ def onetotwod(arr):
 	for i in range(3):
 		for j in range(3):
 			board[i][j]=arr[k]
-			k++
+			k=k+1
 	return board
 
 def twotooned(row,col):
