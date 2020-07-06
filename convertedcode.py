@@ -2,10 +2,10 @@ def onetotwod(arr):
 
 	board=[[0 for x in range(3)] for y in range(3)]
 	k=0
-		for i in range(3):
-			for j in range(3):
-				board[i][j]=arr[k]
-				k++
+	for i in range(3):
+		for j in range(3):
+			board[i][j]=arr[k]
+			k++
 	return board
 
 def twotooned(row,col):
