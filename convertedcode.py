@@ -1,3 +1,5 @@
+import random
+
 class AjaxHandlerView(View):
 	def get(self, request):
 		if request.is_ajax():
@@ -38,6 +40,9 @@ class AjaxHandlerView(View):
 
 
 			def bestMove():
+				#if the array is blank for now, choose any corner move
+				if(all(ele=='blank' for ele in arr)):
+					return (random.choice([0,2,6,8]))
 				#Let's assume the bestScore is the minimum possible(so that we get a move)
 				bestScore=-1000
 				#creating a list of bestmove
