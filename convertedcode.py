@@ -28,9 +28,14 @@ class AjaxHandlerView(View):
 			ai= opponent
 			human= player
 			board=onetotwod(vector)
+			##please check iswild from here
+			iswild #bool type
 
-
-
+			scores={
+				ai:-1 if iswild else 1,
+				human:+1 if iswild else -1,
+				"tie":0
+			}
 
 			def twotooned(row,col):
 				index= col+3*row
@@ -42,7 +47,10 @@ class AjaxHandlerView(View):
 			def bestMove():
 				#if the array is blank for now, choose any corner move
 				if(all(ele=='blank' for ele in arr)):
-					return (random.choice([0,2,6,8]))
+					if(iswild):
+						return 4
+					else:
+						return (random.choice([0,2,6,8]))
 				#Let's assume the bestScore is the minimum possible(so that we get a move)
 				bestScore=-1000
 				#creating a list of bestmove
@@ -89,13 +97,6 @@ class AjaxHandlerView(View):
 				else:
 					return Winner
 
-
-
-			scores={
-				ai:1,
-				human:-1,
-				"tie":0
-			}
 
 			def minimax(board, depth, isMaximizing):
 				result =checkWinner()
