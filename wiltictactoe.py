@@ -32,11 +32,11 @@ class AjaxHandlerView(View):
 				index= col+3*row
 				return index
 
-							def bestMove():
-				#if the array is blank for now, choose any corner move
+			def bestMove():
+			#if the array is blank for now, choose any corner move
 				if(all(ele=='blank' for ele in arr)):
 					return 4
-				#Let's assume the bestScore is the minimum possible(so that we get a move)
+			#Let's assume the bestScore is the minimum possible(so that we get a move)
 				bestScore=-1000
 				#creating a list of bestmove
 				move=[]
