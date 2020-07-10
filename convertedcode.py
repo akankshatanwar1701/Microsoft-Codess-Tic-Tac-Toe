@@ -1,5 +1,7 @@
 import random
 
+#AI Tic-Tac-Toe
+
 class AjaxHandlerView(View):
 	def get(self, request):
 		if request.is_ajax():
