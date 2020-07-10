@@ -30,12 +30,12 @@ class AjaxHandlerView(View):
 			ai= opponent
 			human= player
 			board=onetotwod(vector)
-			##please check iswild from here
-			iswild #bool type
+			
+			
 
 			scores={
-				ai:-1 if iswild else 1,
-				human:+1 if iswild else -1,
+				ai:+1,
+				human:-1,
 				"tie":0
 			}
 
@@ -46,13 +46,7 @@ class AjaxHandlerView(View):
 			board= onetotwod(vector)
 
 
-			def bestMove():
-				#if the array is blank for now, choose any corner move
-				if(all(ele=='blank' for ele in arr)):
-					if(iswild):
-						return 4
-					else:
-						return (random.choice([0,2,6,8]))
+			def bestMove():	
 				#Let's assume the bestScore is the minimum possible(so that we get a move)
 				bestScore=-1000
 				#creating a list of bestmove
