@@ -1,6 +1,8 @@
 import random
 
 #AI Tic-Tac-Toe
+#June-July 2020
+#Codess Team: All Strings Attached
 
 class AjaxHandlerView(View):
 	def get(self, request):
