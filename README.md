@@ -184,6 +184,7 @@ The web app has the following components for the front-end functionality:
 - **Score Board**:space_invader:: This component keeps a track of scores of each player  
   
 ![alt text](https://github.com/Anima108/My-Codes/blob/master/src/wireframes.jpg "WireFrames")
+[WireFrame](https://wireframe.cc/00JdQn)
 
 ---------------------------------------------------------------------------------------------------------------------------------
 # Frameworks Used :file_folder:
