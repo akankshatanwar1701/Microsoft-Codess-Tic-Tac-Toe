@@ -13,7 +13,8 @@
 - [x] **Score Tracker** : Keep a track of all the games played yet  
 - [x] **Level**         : Are you a beginner? Or an expert? You'll not be disappointed  
 - [x] **Surprise Element**: Reverse Tic-Tac-Toe. Go wild! :neckbeard:
-- [x] **Optimised Version**: You can check how the game works without [optimisation](https://github.com/Anima108/My-Codes/blob/master/README.md#optimization-technique) and with optimisation
+- [x] **Optimised Version**: You can check how the game works without [optimisation](https://github.com/Anima108/My-Codes/blob/master/README.md#optimization-technique) and with optimisation  
+- [x] **Suggestions**:question: : Playing against another human?
 
 ![alt text](https://github.com/Anima108/My-Codes/blob/master/src/Features.jpeg "Features")
 
